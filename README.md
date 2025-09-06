@@ -6,6 +6,7 @@
 
 An educational project that builds, trains, and compares two deep learning models for classifying the famous MNIST handwritten digit dataset. This repository serves as a practical guide to understanding the trade-offs between building a model from scratch versus using transfer learning.
 
+![vid](https://github.com/meysam-kazemi/image-classification/blob/main/video/vid.gif)
 
 
 ## 📜 Project Overview
@@ -25,7 +26,7 @@ The codebase is organized into a clean and modular structure to promote readabil
 
 ```bash
 mnist_classifier/
-├── saved_models/         # Stores the trained model weights (.pth files)
+├── models/         # Stores the trained model weights (.pth files)
 ├── src/
 │   ├── __init__.py
 │   ├── data_loader.py    # Handles loading and transforming MNIST data
@@ -33,6 +34,7 @@ mnist_classifier/
 │   ├── transfer_model.py # Defines the transfer learning model architecture
 │   └── train.py          # Contains the training and evaluation logic
 ├── .gitignore            # Specifies files to be ignored by Git
+├── app.py                # The Gradio web application for live testing
 ├── main.py               # Main script to run the training and comparison
 ├── requirements.txt      # Lists all project dependencies
 └── README.md             # You are here!
@@ -84,11 +86,23 @@ pip install -r requirements.txt
 
 ## ▶️ How to Run
 
+### Train the Models
 To start the training process for both models and see the final comparison, simply run the main script:
 ```bash
 python main.py
 ```
 The script will automatically use a CUDA-enabled GPU if one is available; otherwise, it will fall back to the CPU. The trained models will be saved in the `saved_models/` directory.
+
+### Launch the Interactive Demo
+Once the models have been trained, you can launch the Gradio web app to test them.
+
+```bash
+python app.py
+```
+
+Open the local URL provided in your terminal to start drawing and classifying digits.
+
+
 
 ***
 
