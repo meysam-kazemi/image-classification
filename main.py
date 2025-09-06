@@ -18,7 +18,7 @@ def main():
     # Check GPU
     device = "cuda" if torch.cuda.is_available() else "cpu"
 
-    os.makedirs(config.get('MODELS', 'dir'), exist_ok=True) 
+    os.makedirs(config.get('MODEL', 'dir'), exist_ok=True) 
 
     # Train and evaluate the Custom CNN Model
     print("="*50)
