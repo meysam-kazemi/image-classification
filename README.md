@@ -60,7 +60,7 @@ Ensure you have **Python 3.9** or later installed on your system.
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/meysam-kazemi/image-classification
+git clone https://github.com/meysam-kazemi/image-classification.git
 cd image-classification
 ```
 
