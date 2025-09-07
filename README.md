@@ -2,7 +2,7 @@
 
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/license-Apache%202-blue)](https://github.com/meysam-kazemi/image-classification/blob/main/LICENSE)
+[![License: apache](https://img.shields.io/badge/license-Apache%202-blue)](https://github.com/meysam-kazemi/image-classification/blob/main/LICENSE)
 
 An educational project that builds, trains, and compares two deep learning models for classifying the famous MNIST handwritten digit dataset. This repository serves as a practical guide to understanding the trade-offs between building a model from scratch versus using transfer learning.
 
